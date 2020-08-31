@@ -18,7 +18,7 @@ function templateHTML(title, list, body, control){
            <p>
               <textarea name="description" placeholder="Input imageURL"></textarea>
             </p>
-            <p> 예시 URL
+            <p> Example URL
             </p>
             <p> https://raw.githubusercontent.com/Byung-Jun/ocr/master/dream.jpg
             </p>
@@ -84,8 +84,20 @@ for(idx in body.images[0].fields){
   str += body.images[0].fields[idx].inferText + " ";
     //console.log(body.images[0].fields[idx]);
 };
-  rtn = "이미지에서 추출한 TEXT : ";
+rtn = `
+  <!doctype html>
+  <html>  
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+<img src="`;
+rtn += description;
+rtn += `" alt="OCR Image">
+  <p>입력한 URL Image에서 나온 TEXT</p><p>`;
 rtn += str;
+rtn += `  </p></body>
+  </html>`;
 console.log(rtn);
     response.writeHead(200, {'Content-Type':'text/plain; charset=utf-8'});
     response.end(rtn);
