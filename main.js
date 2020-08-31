@@ -18,6 +18,8 @@ function templateHTML(title, list, body, control){
            <p>
               <textarea name="description" placeholder="Input imageURL"></textarea>
             </p>
+            <p> https://img1.daumcdn.net/thumb/R720x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fliveboard%2Fktestate%2Fde234945b54c4b35affff9d90239c9b9.jpg
+            </p>
             <p>
               <input type="submit">
             </p>
