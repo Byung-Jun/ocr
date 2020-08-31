@@ -13,7 +13,7 @@ return `
   </head>
   <body>
 <img src="` + des + `" alt="OCR Image">
-  <p>URL Image에서 추출한 TEXT</p><h1>`+str+`</h1></body></html>`;
+  <p>URL Image에서 추출한 TEXT</p><h1>`+str+`</h1><a href="/">Home</a></body></html>`;
   }else{    
       return `
   <!doctype html>
