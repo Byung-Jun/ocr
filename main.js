@@ -18,7 +18,9 @@ function templateHTML(title, list, body, control){
            <p>
               <textarea name="description" placeholder="Input imageURL"></textarea>
             </p>
-            <p> https://img1.daumcdn.net/thumb/R720x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fliveboard%2Fktestate%2Fde234945b54c4b35affff9d90239c9b9.jpg
+            <p> 예시 URL
+            </p>
+            <p> https://raw.githubusercontent.com/Byung-Jun/ocr/master/dream.jpg
             </p>
             <p>
               <input type="submit">
@@ -82,7 +84,8 @@ for(idx in body.images[0].fields){
   str += body.images[0].fields[idx].inferText + " ";
     //console.log(body.images[0].fields[idx]);
 };
-rtn = str;
+  rtn = "이미지에서 추출한 TEXT : ";
+rtn += str;
 console.log(rtn);
     response.writeHead(200, {'Content-Type':'text/plain; charset=utf-8'});
     response.end(rtn);
