@@ -14,7 +14,7 @@ function templateHTML(title, list, body, control){
   </head>
   <body>
     <h1><a href="/">Input Image Url</a></h1>
-    <form action="http://localhost:3000/create" method="post">
+    <form action="http://127.0.0.1:3000/create" method="post">
            <p>
               <textarea name="description" placeholder="Input imageURL"></textarea>
             </p>
