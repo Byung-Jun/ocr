@@ -29,7 +29,7 @@ return `
               <textarea name="description" placeholder="Input imageURL"></textarea>
             </p>
             <p> TEXT로 바꾸고 싶은 이미지의 주소를 복사해 넣어주세요.
-            </p>
+            </p><br>
             <p> Example URL
             </p>
             <p style="margin-bottom : 0;">https://raw.githubusercontent.com/Byung-Jun/ocr/master/dream.jpg</p>
